@@ -10,6 +10,21 @@
 			"style": {
 				"navigationBarTitleText": "参观 · 华农"
 			}
+		},{
+			"path": "pages/culture/culture",
+			"style": {
+				"navigationBarTitleText": "文化 · 华农"
+			}
+		},{
+			"path": "pages/song/song",
+			"style": {
+				"navigationBarTitleText": "校歌 · 华农"
+			}
+		},{
+			"path": "pages/say/say",
+			"style": {
+				"navigationBarTitleText": "说说 · 华农"
+			}
 		}
 	],
 	"globalStyle": {

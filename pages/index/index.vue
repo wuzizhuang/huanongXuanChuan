@@ -16,9 +16,23 @@
 					参观校园
 				</view>
 			</navigator> 
-			<view class="button">
-				校园文化
-			</view>
+			<navigator url="../culture/culture">
+				<view class="button">
+					校园文化
+				</view>
+			</navigator>
+		</view>
+		<view class="operations" style="top: 80vw;">
+			<navigator url="../song/song">
+				<view class="button">
+					学唱校歌
+				</view>
+			</navigator> 
+			<navigator url="../say/say">
+				<view class="button">
+					开发者说
+				</view>
+			</navigator>
 		</view>
 	</view>
 </template>
@@ -27,19 +41,19 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				audio: null
 			}
 		},
-		onLoad() {
-		},
 		created() {
+			console.log("start");
 			this.playBackgroundMusic();
 		},
 		methods: {
 			playBackgroundMusic(){
-				const audio = new Audio('../../static/校歌.mp3');
-				audio.loop=true;
-				audio.play();
+				this.audio = new Audio('../../static/校歌.mp3');
+				this.audio.loop=true;
+				this.audio.play();
 			}
 		}
 	}
@@ -99,7 +113,7 @@
 	display: flex;
 	justify-content: space-between;
 	width: 70vw;
-	top: 80vw;
+	top: 55vw;
 	font-size: 30px;
 	font-family: 'ShouXie';
 }

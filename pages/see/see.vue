@@ -29,7 +29,13 @@
 		},
 		methods: {
 			change() {
-				this.index = Math.floor(Math.random() * 4);
+				while(true) {
+					var i = Math.floor(Math.random() * 4);
+					if(i != this.index) {
+						this.index = i;
+						break;
+					}
+				}
 			}
 		}
 	}
